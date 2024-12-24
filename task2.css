@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+}
+
+
+.con{
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+}
+.image{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    /* margin-top: 50px; */
+    position: absolute;
+    border: 1px solid #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    /* object-fit: cover; */
+    height: 100%;
+    transition: 0.4s ease;
+    
+}
+
+
+    @keyframes speed {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+.speed1:hover~.image>img{
+    
+    animation-name: speed;
+    animation-duration: 1.1s;
+    animation-timing-function: linear; 
+    /* animation-timing-function: ease-in; */
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+.speed2:hover~.image>img{
+    
+    animation-name: speed;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+.speed3:hover~.image>img{
+    
+    animation-name: speed;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+.speed4:hover~.image>img{
+    
+    animation-name: speed;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+
+@media screen and (max-width : 410px) {
+
+    .image{
+
+        width: 90vw;
+        height: auto;
+        object-fit: cover;
+        
+    }
+    
+}

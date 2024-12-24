@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    gap: 10px;
+}
+.sub{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    
+}
+.sub1{
+    background-color: yellow;
+    animation-name: color;
+    animation-duration: 1.5s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.sub2{
+    background-color: red;
+    animation-name: color;
+    animation-duration: 1.6s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.sub3{
+    background-color: blue;
+    animation-name: color;
+    animation-duration: 1.7s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.sub4{
+    background-color: green;
+    animation-name: color;
+    animation-duration: 1.8s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+@keyframes color {
+    0%{
+
+    }
+    /* 25%{
+        transform: translateY(10px);
+    } */
+    50%{
+        transform: translateY(15px);    
+    }
+   
+}

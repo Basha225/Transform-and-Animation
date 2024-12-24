@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    height: 400px;
+    align-items: flex-end;    
+    gap: 10px;
+    border: 1px solid #000;
+
+}
+
+.sub{
+    width: 30px;
+    /* height: 100px; */
+    background-color: rgba(35, 234, 227, 0.598);
+    animation: musicbar 1s infinite ease;
+    
+    
+}
+.sub:nth-child(even){
+    animation-delay: 0.6s;
+}
+.sub:nth-child(odd){
+    animation-delay: 0.9s;
+}
+
+/* .sub:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+
+
+/* .sub:last-child {
+    animation-delay: 1.6s;
+} */
+
+@keyframes musicbar {
+
+    0% {
+        height: 30px;
+    }
+    25%{
+        height: 70px;
+    }
+    50% {
+        height: 100px;
+    }
+
+    100% {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width : 420px ){
+    .sub{
+        width: 8px;
+        height: 30px;
+    }
+}
